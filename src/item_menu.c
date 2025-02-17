@@ -2442,7 +2442,11 @@ static void PrepareBagForWallyTutorial(void)
         sTempWallyBag->cursorPosition[i] = gBagPosition.cursorPosition[i];
         sTempWallyBag->scrollPosition[i] = gBagPosition.scrollPosition[i];
     }
+    #if ((MORE_POCKETS == TRUE) || (MORE_POCKETS == MEDICINE_ONLY))
     ClearItemSlots(gSaveBlock1Ptr->bagPocket_Items, BAG_MEDICINE_COUNT);
+    #else
+    ClearItemSlots(gSaveBlock1Ptr->bagPocket_Items, BAG_ITEMS_COUNT);
+    #endif
     ClearItemSlots(gSaveBlock1Ptr->bagPocket_PokeBalls, BAG_POKEBALLS_COUNT);
     ResetBagScrollPositions();
 }
