@@ -91,6 +91,12 @@ PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial::
 	delay 30
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
+	msgbox PetalburgCity_Gym_Text_YoullNeedDexnav
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox PetalburgCity_Gym_Text_ReceivedDexnav
+	waitfanfare
+	setflag DN_FLAG_DEXNAV_GET
+	waitmovement 0
 	msgbox PetalburgCity_Gym_Text_DadGoCollectBadges, MSGBOX_DEFAULT
 	setvar VAR_PETALBURG_GYM_STATE, 2
 	releaseall
@@ -1593,3 +1599,17 @@ PetalburgCity_Gym_Text_NormanRematchNeedTwoMons:
 	.string "Sorry, but you'll have to come back\n"
 	.string "with at least two POKéMON.$"
 
+PetalburgCity_Gym_Text_YoullNeedDexnav:
+	.string "It seems like you are good at \n"
+	.string "catching POKéMON... \p"
+	.string "But some POKéMON are hard to find \n"
+	.string "and catch, like WALLY'S RALTS. \p"
+	.string "I used a DEXNAV to help find rare \n"
+	.string "POKéMON and become a better trainer \p"
+	.string "Here, take mine. It'll help you on \n"
+	.string "your adventure, and I'm in the gym \p"
+	.string "all day. I don't need it. $"
+
+
+PetalburgCity_Gym_Text_ReceivedDexnav:
+	.string "{PLAYER} received the DEXNAV!$"
