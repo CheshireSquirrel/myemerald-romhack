@@ -1601,14 +1601,14 @@ PetalburgCity_Gym_Text_NormanRematchNeedTwoMons:
 
 PetalburgCity_Gym_Text_YoullNeedDexnav:
 	.string "It seems like you are good at \n"
-	.string "catching POKéMON... \p"
+	.string "catching POKéMON...\p"
 	.string "But some POKéMON are hard to find \n"
-	.string "and catch, like WALLY'S RALTS. \p"
+	.string "and catch, like WALLY'S RALTS.\p"
 	.string "I used a DEXNAV to help find rare \n"
-	.string "POKéMON and become a better trainer \p"
+	.string "POKéMON and become a better trainer.\p"
 	.string "Here, take mine. It'll help you on \n"
-	.string "your adventure, and I'm in the gym \p"
-	.string "all day. I don't need it. $"
+	.string "your adventure, and I'm in the gym \l"
+	.string "all day. I don't need it anymore.$"
 
 
 PetalburgCity_Gym_Text_ReceivedDexnav:
