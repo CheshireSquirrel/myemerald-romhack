@@ -1600,11 +1600,13 @@ PetalburgCity_Gym_Text_NormanRematchNeedTwoMons:
 	.string "with at least two POKéMON.$"
 
 PetalburgCity_Gym_Text_YoullNeedDexnav:
-	.string "It seems like you are good at \n"
+	.string "Thanks for helping out, {PLAYER}.\n"
+	.string "It seems like you are good at \l"
 	.string "catching POKéMON...\p"
-	.string "But some POKéMON are hard to find \n"
-	.string "and catch, like WALLY'S RALTS.\p"
-	.string "I used a DEXNAV to help find rare \n"
+	.string "But finding the right POKéMON \n"
+	.string "can be hard, especially for rare ones \l"
+	.string "like WALLY'S RALTS.\p"
+	.string "I used a DEXNAV to help find my \n"
 	.string "POKéMON and become a better trainer.\p"
 	.string "Here, take mine. It'll help you on \n"
 	.string "your adventure, and I'm in the gym \l"

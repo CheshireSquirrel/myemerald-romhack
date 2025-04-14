@@ -885,18 +885,21 @@ RustboroCity_EventScript_RestoreBgm::
 RustboroCity_EventScript_BattleMayTreecko::
 	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_TREECKO, RustboroCity_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	setflag DN_FLAG_DETECTOR_MODE
 	goto RustboroCity_EventScript_MayBrineyHint
 	end
 
 RustboroCity_EventScript_BattleMayTorchic::
 	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_TORCHIC, RustboroCity_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	setflag DN_FLAG_DETECTOR_MODE
 	goto RustboroCity_EventScript_MayBrineyHint
 	end
 
 RustboroCity_EventScript_BattleMayMudkip::
 	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_MUDKIP, RustboroCity_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	setflag DN_FLAG_DETECTOR_MODE
 	goto RustboroCity_EventScript_MayBrineyHint
 	end
 
@@ -946,18 +949,21 @@ RustboroCity_EventScript_BrendanBrineyHint::
 RustboroCity_EventScript_BattleBrendanTreecko::
 	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_TREECKO, RustboroCity_Text_BrendanDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	setflag DN_FLAG_DETECTOR_MODE
 	goto RustboroCity_EventScript_BrendanBrineyHint
 	end
 
 RustboroCity_EventScript_BattleBrendanTorchic::
 	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_TORCHIC, RustboroCity_Text_BrendanDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	setflag DN_FLAG_DETECTOR_MODE
 	goto RustboroCity_EventScript_BrendanBrineyHint
 	end
 
 RustboroCity_EventScript_BattleBrendanMudkip::
 	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_MUDKIP, RustboroCity_Text_BrendanDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	setflag DN_FLAG_DETECTOR_MODE
 	goto RustboroCity_EventScript_BrendanBrineyHint
 	end
 
@@ -1172,7 +1178,14 @@ RustboroCity_Text_MayImNotGoingToLose:
 
 RustboroCity_Text_MayDefeat:
 	.string "Yikes!\n"
-	.string "You're better than I expected!$"
+	.string "You're better than I expected!\p"
+	.string "Your POKéMON are really cool too...\p"
+	.string "But there's a lot more POKéMON to find.\n"
+	.string "There's even special hidden POKéMON in the wild.\p"
+	.string "There's a setting on the DEXNAV that detects\n"
+	.string "them for you. Here, I'll activate it!\p"
+	.string "… … … … … …\p"
+	.string "I can't wait to see what POKéMON you'll find!$"
 
 RustboroCity_Text_MayMrBrineyHint:
 	.string "MAY: Oh, by the way, MR. BRINEY, who\n"
@@ -1218,7 +1231,21 @@ RustboroCity_Text_BrendanIWontGoEasy:
 
 RustboroCity_Text_BrendanDefeat:
 	.string "Hmm…\n"
-	.string "You're pretty good.$"
+	.string "You're pretty good.\p"
+	.string "You have some strong POKéMON... \p"
+	.string "But I bet you could get even stronger\n"
+	.string "POKéMON. There's even some that hide \l"
+	.string "in the wild, crazy right? \p"
+	.string "Anyways, I'll activate the setting on\n"
+	.string "your DEXNAV to find them. \p"
+	.string "… … … … … …\p"
+	.string "I can't wait to battle your POKéMON\n"
+	.string "later, I bet they'll be loads stronger!$"
+
+
+RustboroCity_Text_DexnavDetectMode:
+	.string "You seem to have caught quite a few\n"
+	.string "POKéMON"
 
 RustboroCity_Text_BrendanMrBrineyHint:
 	.string "BRENDAN: By the way, you know\n"
